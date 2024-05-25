@@ -31,7 +31,6 @@ public class JPATest {
 	
 	@After
 	public void destroy(){
-		System.out.println(1111);
 		transaction.commit();
 		entityManager.close();
 		entityManagerFactory.close();
